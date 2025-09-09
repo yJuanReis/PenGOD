@@ -340,9 +340,9 @@ color 0A                     # Cor: fundo preto, texto verde
 
 <div align="center">
 
-**Para dúvidas ou problemas técnicos:**
+Para dúvidas ou problemas técnicos:
 
-**Contato**:
+Contato:
 <a href="https://www.linkedin.com/in/juanreis" rel="nofollow" target="_blank">
 <img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
 </a>
@@ -351,7 +351,6 @@ color 0A                     # Cor: fundo preto, texto verde
 </a>
 
 </div>
-
 ---
 
 ## 📜 Licença
