@@ -4,11 +4,19 @@ BatToExe Portable: A Tribute to an Essential Tool by Makazzz
 </p>
 
 <p align="center">
-<a href="#-english-version">🇺🇸 English Version</a> •
-<a href="#-versão-em-português">🇧🇷 Versão em Português</a>
+<img alt="Platform" src="https://www.google.com/search?q=https://img.shields.io/badge/Platform-Windows-0078D6%3Fstyle%3Dfor-the-badge%26logo%3Dwindows" title="Compatível com Windows">
+<img alt="License" src="https://www.google.com/search?q=https://img.shields.io/badge/License-MIT-yellow.svg%3Fstyle%3Dfor-the-badge" title="Licença MIT">
+<a href="https://www.google.com/search?q=https://github.com/Makazzz/BatToExe-Portable/releases">
+<img alt="Latest Release" src="https://www.google.com/search?q=https://img.shields.io/github/v/release/Makazzz/BatToExe-Portable%3Fstyle%3Dfor-the-badge%26logo%3Dgithub" title="Ver Última Versão">
+</a>
 </p>
 
-🇺🇸 English Version
+<p align="center">
+<a href="#english-version">🇺🇸 English Version</a> •
+<a href="#versão-em-português">🇧🇷 Versão em Português</a>
+</p>
+
+<a id="english-version"></a>🇺🇸 English Version
 🙏 A Special Thanks to Makazzz
 First and foremost, thank you to Makazzz. He took a common need—converting .bat scripts to .exe files—and turned it into an elegant, practical, and fully portable solution.
 
@@ -82,7 +90,7 @@ BatToExe (Original Application): Developed by Fatih Kodak (MIT License).
 
 PortableApps.com Launcher: Developed by the PortableApps.com team (GPL v2.0 License).
 
-🇧🇷 Versão em Português
+<a id="versão-em-português"></a>🇧🇷 Versão em Português
 🙏 Agradecimento Especial a Makazzz
 Antes de tudo, meu muito obrigado ao Makazzz. Ele pegou uma necessidade comum — a de converter scripts .bat para .exe — e a transformou em uma solução elegante, prática e totalmente portátil.
 
