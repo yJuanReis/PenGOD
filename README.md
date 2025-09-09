@@ -13,7 +13,7 @@ Menu interativo com **47 funções** para manutenção, reparo e diagnóstico de
 Contém script batch, Geek Uninstaller e God Mode  
 Ideal para técnicos e usuários avançados
 
-[![LinkedIn - Juan Reis](https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/juanreis)
+![LinkedIn - Juan Reis](https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin)
 
 </div>
 
@@ -335,10 +335,8 @@ color 0A                     # Cor: fundo preto, texto verde
 
 **Para dúvidas ou problemas técnicos:**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/juanreis)
-
-📧 **Contato**: Juan Reis  
-🌐 **LinkedIn**: [linkedin.com/in/juanreis](https://www.linkedin.com/in/juanreis)
+**Contato**: Juan Reis  
+**LinkedIn**: [linkedin.com/in/juanreis](https://linkedin.com/in/juanreis)
 
 </div>
 
@@ -383,8 +381,8 @@ SOFTWARE.
 
 **Desenvolvido com ❤️ por Juan Reis**
 
-![Windows](https://img.shields.io/badge/Feito_para-Windows-0078D6?style=flat-square&logo=windows)
-![Batch](https://img.shields.io/badge/Script-Batch-4EAA25?style=flat-square&logo=gnu-bash)
-![Stars](https://img.shields.io/badge/⭐_Se_útil,-favorite_este_repo-yellow?style=flat-square)
+![Feito para](https://img.shields.io/badge/Feito_para-Windows-0078D6?style=flat-square&logo=windows)
+![Script](https://img.shields.io/badge/Script-Batch-4EAA25?style=flat-square&logo=gnu-bash)
+![Se útil](https://img.shields.io/badge/⭐_Se_útil,-favorite_este_repo-yellow?style=flat-square)
 
 </div>
