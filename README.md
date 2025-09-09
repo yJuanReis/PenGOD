@@ -1,30 +1,28 @@
-
-
-
-
-
 # 🛠️ PenGOD
 
 <div align="center">
+
 <picture>
 <img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
 </picture>
-
 <picture>
 <img alt="Batch" src="https://img.shields.io/badge/Batch-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
 </picture>
-
 <picture>
 <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" />
 </picture>
-
 <picture>
 <img alt="Version" src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge" />
 </picture>
 
-<a href="https://www.linkedin.com/in/juanreis" rel="nofollow">
+<p><strong>Pendrive com ferramentas de suporte Windows por Juan Reis</strong></p>
+<p>Menu interativo com <strong>47 funções</strong> para manutenção, reparo e diagnóstico de sistema<br/>Contém script batch, Geek Uninstaller e God Mode<br/>Ideal para técnicos e usuários avançados</p>
 
-<p><strong>Pendrive com ferramentas de suporte Windows por Juan Reis</strong></p> <p>Menu interativo com <strong>47 funções</strong> para manutenção, reparo e diagnóstico de sistema<br/>Contém script batch, Geek Uninstaller e God Mode<br/>Ideal para técnicos e usuários avançados</p> <picture> <img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" /> </picture> </a>
+<a href="https://www.linkedin.com/in/juanreis" rel="nofollow">
+<picture>
+<img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
+</picture>
+</a>
 
 </div>
 
