@@ -342,11 +342,12 @@ color 0A                     # Cor: fundo preto, texto verde
 
 **Para dúvidas ou problemas técnicos:**
 
-**Contato**: Juan Reis  
+**Contato**:
 <a href="https://www.linkedin.com/in/juanreis" rel="nofollow" target="_blank">
-<picture>
 <img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
-</picture>
+</a>
+<a href="mailto:juanreissilva@gmail.com" rel="nofollow" target="_blank">
+<img alt="Email - Juan Reis" src="https://www.google.com/search?q=https://img.shields.io/badge/Gmail-juanreissilva%40gmail.com-D14836%3Fstyle%3Dfor-the-badge%26logo%3Dgmail" />
 </a>
 
 </div>
