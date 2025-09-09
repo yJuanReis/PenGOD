@@ -340,10 +340,17 @@ color 0A                     # Cor: fundo preto, texto verde
 
 <div align="center">
 
-Para dúvidas ou problemas técnicos:
-
-Contato:
-<a href="mailto:juanreissilva@gmail.com" rel="nofollow"> <p><strong>Pendrive com ferramentas de suporte Windows por Juan Reis</strong></p> <p>Menu interativo com <strong>47 funções</strong> para manutenção, reparo e diagnóstico de sistema<br/>Contém script batch, Geek Uninstaller e God Mode<br/>Ideal para técnicos e usuários avançados</p> </a> <a href="mailto:juanreissilva@gmail.com" rel="nofollow"> <picture> <img alt="E-mail - Juan Reis" src="https://img.shields.io/badge/Email-juanreissilva%40gmail.com-6c757d?style=for-the-badge&logo=gmail&logoColor=white" /> </picture> </a> <a href="https://www.linkedin.com/in/juanreis" rel="nofollow"> <picture> <img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" /> </picture> </a>
+**Pendrive com ferramentas de suporte Windows por Juan Reis**
+Para dúvidas ou problemas técnicos, entre em contato:
+<p>
+<a href="mailto:juanreissilva@gmail.com" rel="nofollow">
+<img alt="E-mail - Juan Reis" src="https://img.shields.io/badge/Email-juanreissilva%40gmail.com-6c757d?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/juanreis" rel="nofollow">
+<img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
+</a>
+</p>
 
 </div>
 
