@@ -343,12 +343,7 @@ color 0A                     # Cor: fundo preto, texto verde
 Para dúvidas ou problemas técnicos:
 
 Contato:
-<a href="https://www.linkedin.com/in/juanreis" rel="nofollow" target="_blank">
-<img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
-</a>
-<a href="mailto:juanreissilva@gmail.com" rel="nofollow" target="_blank">
-<img alt="Email - Juan Reis" src="https://img.shields.io/badge/Gmail-juanreissilva%40gmail.com-D14836%3Fstyle%3Dfor-the-badge%26logo%3Dgmail" />
-</a>
+<a href="mailto:juanreissilva@gmail.com" rel="nofollow"> <p><strong>Pendrive com ferramentas de suporte Windows por Juan Reis</strong></p> <p>Menu interativo com <strong>47 funções</strong> para manutenção, reparo e diagnóstico de sistema<br/>Contém script batch, Geek Uninstaller e God Mode<br/>Ideal para técnicos e usuários avançados</p> </a> <a href="mailto:juanreissilva@gmail.com" rel="nofollow"> <picture> <img alt="E-mail - Juan Reis" src="https://img.shields.io/badge/Email-juanreissilva%40gmail.com-6c757d?style=for-the-badge&logo=gmail&logoColor=white" /> </picture> </a> <a href="https://www.linkedin.com/in/juanreis" rel="nofollow"> <picture> <img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" /> </picture> </a>
 
 </div>
 
