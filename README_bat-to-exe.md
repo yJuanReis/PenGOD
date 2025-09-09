@@ -4,16 +4,13 @@ BatToExe Portable: A Tribute to an Essential Tool by Makazzz
 </p>
 
 <p align="center">
-<img alt="Platform" src="https://www.google.com/search?q=https://img.shields.io/badge/Platform-Windows-0078D6%3Fstyle%3Dfor-the-badge%26logo%3Dwindows" title="Compatível com Windows">
-<img alt="License" src="https://www.google.com/search?q=https://img.shields.io/badge/License-MIT-yellow.svg%3Fstyle%3Dfor-the-badge" title="Licença MIT">
-<a href="https://www.google.com/search?q=https://github.com/Makazzz/BatToExe-Portable/releases">
-<img alt="Latest Release" src="https://www.google.com/search?q=https://img.shields.io/github/v/release/Makazzz/BatToExe-Portable%3Fstyle%3Dfor-the-badge%26logo%3Dgithub" title="Ver Última Versão">
-</a>
-</p>
-
-<p align="center">
-<a href="#english-version">🇺🇸 English Version</a> •
-<a href="#versão-em-português">🇧🇷 Versão em Português</a>
+  <a href="#english-version" title="English Version">
+    <img src="https://img.shields.io/badge/Language-EN-blue?style=for-the-badge&logo=google-translate" alt="English Version">
+  </a>
+  &nbsp;&nbsp;
+  <a href="#versão-em-português" title="Versão em Português">
+    <img src="https://img.shields.io/badge/Idioma-PT--BR-green?style=for-the-badge&logo=google-translate" alt="Versão em Português">
+  </a>
 </p>
 
 <a id="english-version"></a>🇺🇸 English Version
