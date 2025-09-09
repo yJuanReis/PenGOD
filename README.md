@@ -147,8 +147,6 @@ color 0A                     # Cor: fundo preto, texto verde
 
 ### 📊 Especificações Técnicas
 
-<div align="center">
-
 | Característica | Especificação |
 |----------------|---------------|
 | **Tamanho** | ~3-5 MB |
