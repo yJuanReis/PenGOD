@@ -4,14 +4,6 @@ BatToExe Portable: A Tribute to an Essential Tool by Makazzz
 </p>
 
 <p align="center">
-<img alt="Platform" src="https://www.google.com/url?sa=E&source=gmail&q=https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge%26logo=windows" title="Compatível com Windows">
-<img alt="License" src="https://www.google.com/url?sa=E&source=gmail&q=https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" title="Licença MIT">
-<a href="https://www.google.com/search?q=https://github.com/Makazzz/BatToExe-Portable/releases">
-<img alt="Latest Release" src="https://www.google.com/search?q=https://img.shields.io/github/v/release/Makazzz/BatToExe-Portable%3Fstyle%3Dfor-the-badge%26logo%3Dgithub" title="Ver Última Versão">
-</a>
-</p>
-
-<p align="center">
 <a href="#-english-version">🇺🇸 English Version</a> •
 <a href="#-versão-em-português">🇧🇷 Versão em Português</a>
 </p>
