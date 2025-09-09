@@ -544,9 +544,25 @@ Para dúvidas sobre o uso das ferramentas ou problemas específicos:
 - **Geek Uninstaller**: Menu Ajuda dentro do aplicativo
 
 ---
+📜 Licença
+Este projeto é distribuído sob a Licença MIT. Para mais detalhes, veja o texto completo abaixo.
 
-**Versão**: 2.0  
-**Compatibilidade**: Windows 7/8/10/11  
-**Última Atualização**: Setembro 2025  
-**Desenvolvido por**: Juan Reis - Suporte Técnico  
-**Contato**: [LinkedIn - Juan Reis](https://www.linkedin.com/in/juanreis)
+<details>
+<summary>Ver texto da Licença MIT</summary>
+
+Copyright (c) 2025 Juan Reis
+
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para negociar o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e permitir que as pessoas a quem o Software é fornecido o façam, sujeito às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTE DE, FORA DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+
+</details>
+
+<div align="center">
+<p>Desenvolvido por <strong>Juan Reis</strong></p>
+<a href="https://www.linkedin.com/in/juanreis">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin" alt="LinkedIn">
+</a>
+</div>
