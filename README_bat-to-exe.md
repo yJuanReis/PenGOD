@@ -45,7 +45,31 @@ PortableApps.com Platform (Recommended for the best experience).
 📜 Credits and Licenses
 The open-source ecosystem is built on collaboration, and it's only fair to give credit to everyone involved:
 
-BatToExe Portable: Packaged and ingeniously created by Makazzz (MIT License).
+BatToExe Portable: Packaged and ingeniously created by Makazzz.
+<details>
+<summary>MIT License</summary>
+<pre><code>MIT License
+
+Copyright (c) 2019 Makazzz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</code></pre>
+</details>
 
 BatToExe (Original Application): Developed by Fatih Kodak (MIT License).
 
@@ -94,7 +118,31 @@ Plataforma PortableApps.com (Recomendado para uma melhor experiência).
 📜 Créditos e Licenças
 O ecossistema de software livre é feito de colaboração, e é justo dar crédito a todos os envolvidos:
 
-BatToExe Portable: Empacotado e genializado por Makazzz (Licença MIT).
+BatToExe Portable: Empacotado e genializado por Makazzz.
+<details>
+<summary>Licença MIT</summary>
+<pre><code>MIT License
+
+Copyright (c) 2019 Makazzz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</code></pre>
+</details>
 
 BatToExe (Aplicação Original): Desenvolvido por Fatih Kodak (Licença MIT).
 
