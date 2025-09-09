@@ -373,14 +373,17 @@ SOFTWARE.
 
 ---
 
-<div align="center">
+<div align="center">[2]
+<picture>
+<img alt="Feito para" src="https://img.shields.io/badge/Feito_para-Windows-0078D6?style=flat-square&logo=windows" />
+</picture>
 
-### 🚀 **PenGOD - Ferramentas Profissionais para Suporte Windows**
+<picture>
+<img alt="Script" src="https://img.shields.io/badge/Script-Batch-4EAA25?style=flat-square&logo=gnu-bash" />
+</picture>
 
-**Desenvolvido com ❤️ por Juan Reis**
+<picture>
+<img alt="Se útil" src="https://img.shields.io/badge/%E2%AD%90_Se_%C3%BAtil,-favorite_este_repo-yellow?style=flat-square" />
+</picture>
 
-![Feito para](https://img.shields.io/badge/Feito_para-Windows-0078D6?style=flat-square&logo=windows)
-![Script](https://img.shields.io/badge/Script-Batch-4EAA25?style=flat-square&logo=gnu-bash)
-![Se útil](https://img.shields.io/badge/⭐_Se_útil,-favorite_este_repo-yellow?style=flat-square)
-
-</div>
+</div>[2]
