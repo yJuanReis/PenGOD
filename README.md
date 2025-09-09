@@ -340,8 +340,7 @@ color 0A                     # Cor: fundo preto, texto verde
 
 <div align="center">
 
-**Pendrive com ferramentas de suporte Windows por Juan Reis**
-Para dúvidas ou problemas técnicos, entre em contato:
+**Para dúvidas ou problemas técnicos, entre em contato:**
 <p>
 <a href="mailto:juanreissilva@gmail.com" rel="nofollow">
 <img alt="E-mail - Juan Reis" src="https://img.shields.io/badge/Email-juanreissilva%40gmail.com-6c757d?style=for-the-badge&logo=gmail&logoColor=white" />
