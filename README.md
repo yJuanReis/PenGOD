@@ -1,358 +1,772 @@
-<div align="center">
-<img src="BatToExePortable/App/AppInfo/appicon_128.png" alt="Logo PenGOD" width="128"/>
-<h1>PenGOD</h1>
-<p><strong>Seu Canivete Suíço Portátil para Suporte Técnico em Windows</strong></p>
+PenGOD
+Pendrive com ferramentas de suporte Windows por Juan Reis. Menu interativo com 47 funções para manutenção, reparo e diagnóstico de sistema. Contém script batch, Geek Uninstaller para remoção completa de programas e God Mode para configurações avançadas. Ideal para técnicos e usuários avançados.
 
-<p>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Vers%C3%A3o-2.0-blue.svg" alt="Versão 2.0">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Compatibilidade-Windows%25207|8|10|11-informational.svg" alt="Compatibilidade">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Licen%C3%A7a-MIT-green.svg" alt="Licença MIT">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Batch%2520Script-yellow.svg" alt="Linguagem Batch">
-</p>
-</div>
+Pendrive de Suporte Técnico - Juan Reis
+Manual Detalhado do Sistema de Ferramentas de Reparo e Manutenção
+Este pendrive contém um sistema completo de ferramentas para suporte técnico em Windows, organizado em um menu interativo que facilita o acesso a comandos essenciais de manutenção, diagnóstico e reparo do sistema.
 
-O PenGOD é um sistema completo de ferramentas para suporte técnico em Windows, criado para ser o melhor amigo de técnicos e analistas. Organizado em um menu interativo, ele facilita o acesso a dezenas de comandos essenciais para manutenção, diagnóstico e reparo do sistema. Por ser totalmente portátil, pode ser executado diretamente de um dispositivo USB, sem necessidade de instalação.
+🚀 Configurações Iniciais do Script
+Comandos de Inicialização
+@echo off                    # Oculta os comandos executados
+chcp 65001 >nul             # Define codificação UTF-8 para caracteres especiais
+mode con: cols=100 lines=35  # Define janela do console: 100 colunas x 35 linhas
+setlocal enabledelayedexpansion # Habilita expansão atrasada de variáveis
+title MENU DE SUPORTE E REPARO - FUNESA # Define título da janela
+color 0A                     # Define cor: fundo preto, texto verde claro
 
-📋 Índice
-🚀 Como Usar
+🔒 Verificação de Privilégios Administrativos
+O script verifica automaticamente se está sendo executado como administrador:
 
-✨ Funcionalidades Detalhadas
+Comando: cacls.exe "%SYSTEMROOT%\system32\config\system"
 
-Manutenção de Disco
+Função: Tenta acessar arquivo do sistema que requer privilégios administrativos
 
-Ferramentas de Sistema
+Resultado: Se falhar, exibe aviso e encerra o script
 
-Ferramentas de Rede
+Importância: Muitas funções (CHKDSK, SFC, DISM) requerem privilégios elevados
 
-Outras Ferramentas
+📋 MENU PRINCIPAL - 5 Opções
+1. Manutenção de Disco
+2. Ferramentas de Sistema
+3. Ferramentas de Rede
+4. Outras Ferramentas
+5. Sair
+💾 MENU DE MANUTENÇÃO DE DISCO (7 Opções)
+1. Verificar e Reparar Disco (CHKDSK)
+Comando: chkdsk /f C:
 
-🎯 Ferramenta em Destaque: Geek Uninstaller
+Função: Verifica e corrige erros no sistema de arquivos
 
-📁 Estrutura de Arquivos
+Parâmetros:
 
-⚠️ Avisos e Precauções
+/f: Corrige erros automaticamente
 
-🛠️ Ferramentas Utilizadas
+C:: Especifica a unidade C (sistema)
 
-📄 Licença
+Tempo: Pode demorar de minutos a horas dependendo do tamanho do disco
 
-📞 Contato e Links Úteis
+Aviso: Pode requerer reinicialização se a unidade estiver em uso
 
-🚀 Como Usar
-Garanta que a pasta APP (contendo Desinstaldor.exe) esteja no mesmo diretório que o executável principal.
+2. Desfragmentar Disco
+Comando: defrag C: /h
 
-Clique com o botão direito em Suporte-TI.exe e selecione "Executar como administrador". Este passo é crucial para que todas as funções operem corretamente.
+Função: Reorganiza arquivos no disco para melhor performance
 
-Navegue pelo menu utilizando os números correspondentes a cada opção e pressione Enter.
+Parâmetros:
 
-✨ Funcionalidades Detalhadas
-O script principal oferece acesso a 4 menus com um total de 47 funções. Clique em cada seção para expandir e ver os detalhes.
+C:: Unidade a ser desfragmentada
 
-<details>
-<summary><strong>💾 1. Manutenção de Disco</strong></summary>
+/h: Prioridade alta para o processo
 
-#
+Benefício: Melhora velocidade de acesso aos arquivos
 
-Função
+Tempo: Varia conforme fragmentação do disco
 
-Comando
+3. Testar Velocidade de Disco
+Comando: winsat disk
 
-Descrição
+Função: Executa benchmark de performance do disco
 
-1
+Resultados: Mostra velocidade de leitura/escrita sequencial e aleatória
 
-Verificar e Reparar Disco
+Uso: Identificar problemas de performance de armazenamento
 
-chkdsk /f C:
+4. Limpar Arquivos Temporários (Linha de Comando)
+Comando: del /q /f /s "%TEMP%\*.*"
 
-Verifica e corrige erros no sistema de arquivos da unidade C.
+Função: Remove todos os arquivos da pasta temporária do usuário
 
-2
+Parâmetros:
 
-Desfragmentar Disco
+/q: Modo silencioso (não pede confirmação)
 
-defrag C: /h
+/f: Force (remove arquivos somente leitura)
 
-Reorganiza arquivos fragmentados para melhorar a performance de leitura.
+/s: Remove subdiretórios
 
-3
+Aviso: Ação irreversível - pede confirmação antes de executar
 
-Testar Velocidade de Disco
+Benefício: Libera espaço em disco
 
-winsat disk
+5. Limpar Arquivos Temporários (Interface Gráfica)
+Comando: cleanmgr.exe
 
-Executa um benchmark de performance de leitura e escrita do disco.
+Função: Abre a ferramenta nativa de limpeza de disco do Windows
 
-4
+Vantagem: Interface gráfica permite escolher o que limpar
 
-Limpar Temp (CMD)
+Opções: Arquivos temporários, lixeira, cache do navegador, etc.
 
-del /q /f /s "%TEMP%\*.*"
+6. Verificar Saúde do Disco
+Comando: wmic diskdrive get status
 
-Remove arquivos temporários do usuário via linha de comando.
+Função: Exibe status de saúde de todos os discos conectados
 
-5
+Informações: Mostra se os discos estão "OK", "Degraded", etc.
 
-Limpar Temp (GUI)
+Uso: Diagnóstico rápido de problemas de hardware
 
-cleanmgr.exe
+⚙️ MENU DE FERRAMENTAS DE SISTEMA (14 Opções)
+1. Reparar Arquivos de Sistema (SFC)
+Comando: sfc /scannow
 
-Abre a ferramenta nativa de Limpeza de Disco do Windows.
+Função: Verifica integridade dos arquivos do sistema Windows
 
-6
+Processo: Compara arquivos com versões originais e substitui corrompidos
 
-Verificar Saúde do Disco
+Tempo: 15-30 minutos normalmente
 
-wmic diskdrive get status
+Resultado: Relatório de arquivos corrompidos encontrados/reparados
 
-Exibe o status de saúde (S.M.A.R.T.) de todos os discos rígidos.
+2. Verificar Erros de Memória
+Comando: mdsched
 
-</details>
+Função: Agenda diagnóstico completo da memória RAM
 
-<details>
-<summary><strong>⚙️ 2. Ferramentas de Sistema</strong></summary>
+Processo: Reinicia o PC e executa teste antes da inicialização do Windows
 
-#
+Detecção: Identifica problemas de hardware na memória
 
-Função
+Tempo: Pode levar 20+ minutos dependendo da quantidade de RAM
 
-Comando
+3. Restaurar Sistema
+Comando: rstrui
 
-Descrição
+Função: Abre a ferramenta de Restauração do Sistema
 
-1
+Uso: Retorna o sistema a um ponto anterior funcionando
 
-Reparar Arquivos (SFC)
+Requisito: Pontos de restauração previamente criados
 
-sfc /scannow
+4. Gerenciar Processos (Task Manager)
+Comando: taskmgr
 
-Verifica e repara arquivos de sistema corrompidos ou ausentes.
+Função: Abre o Gerenciador de Tarefas
 
-2
+Uso: Monitorar/finalizar processos, verificar uso de recursos
 
-Verificar Erros de Memória
+Informações: CPU, memória, disco, rede por processo
 
-mdsched
+5. Informações do Sistema
+Comando: systeminfo | more
 
-Agenda um diagnóstico completo da memória RAM na próxima reinicialização.
+Função: Exibe informações detalhadas do sistema
 
-3
+Dados: SO, hardware, patches instalados, configuração de rede
 
-Restaurar Sistema
+Formato: Saída paginada para fácil leitura
 
-rstrui
+6. Gerenciar Usuários Locais
+Comando: lusrmgr.msc
 
-Abre a ferramenta de Restauração do Sistema para reverter a um ponto anterior.
+Função: Abre console de gerenciamento de usuários e grupos locais
 
-4
+Uso: Criar, modificar, desabilitar contas de usuário
 
-Gerenciar Processos
+Acesso: Requer privilégios administrativos
 
-taskmgr
+7. Verificar Integridade de Arquivos (DISM)
+Comando: DISM /Online /Cleanup-Image /ScanHealth
 
-Abre o Gerenciador de Tarefas para monitorar processos e performance.
+Função: Verifica integridade da imagem do Windows
 
-5
+Complemento: Mais profundo que o SFC, verifica repositório de componentes
 
-Informações do Sistema
+Uso: Quando SFC falha ou não resolve problemas
 
-systeminfo | more
+8. Ativar/Desativar Firewall do Windows
+Comandos:
 
-Exibe um relatório detalhado do sistema, hardware e software.
+Desativar: netsh advfirewall set allprofiles state off
 
-6
+Ativar: netsh advfirewall set allprofiles state on
 
-Gerenciar Usuários Locais
+Função: Controla firewall para todos os perfis de rede
 
-lusrmgr.msc
+Perfis: Domínio, Privado, Público
 
-Abre o console de gerenciamento de contas de usuários e grupos locais.
+Aviso: Desativar firewall reduz segurança do sistema
 
-7
+9. Ver Logs de Eventos
+Comando: eventvwr
 
-Verificar Imagem (DISM)
+Função: Abre Visualizador de Eventos do Windows
 
-DISM /Online /Cleanup-Image /ScanHealth
+Uso: Diagnosticar erros, avisos, informações do sistema
 
-Realiza uma verificação avançada da integridade da imagem do Windows.
+Categorias: Sistema, Aplicativo, Segurança, etc.
 
-8
+10. Criar Ponto de Restauração
+Comando: powershell.exe -Command "Checkpoint-Computer -Description 'Ponto de Restauracao Manual'"
 
-Ativar/Desativar Firewall
+Função: Cria snapshot do estado atual do sistema
 
-netsh advfirewall set allprofiles state [on/off]
+Uso: Backup antes de alterações críticas
 
-Controla o Firewall do Windows para todos os perfis de rede.
+Recuperação: Permite retornar a este estado específico
 
-9
+11. Executar Comando Personalizado (CMD)
+Comando: cmd
 
-Ver Logs de Eventos
+Função: Abre prompt de comando para execução manual de comandos
 
-eventvwr
+Uso: Comandos específicos não contemplados no menu
 
-Abre o Visualizador de Eventos para diagnosticar erros e avisos do sistema.
+Flexibilidade: Acesso total à linha de comando
 
-10
+12. Atualizar Todos os Programas (Winget)
+Comando: winget update --all
 
-Criar Ponto de Restauração
+Função: Atualiza todos os programas gerenciados pelo Winget
 
-powershell ... Checkpoint-Computer
+Requisito: Windows Package Manager instalado
 
-Cria um novo ponto de restauração do sistema manualmente.
+Benefício: Atualização em lote de software
 
-11
+13. Desativar Windows Defender ⚠️
+Comando: powershell -ExecutionPolicy Bypass -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
 
-Comando Personalizado
+Função: Desabilita monitoramento em tempo real do Windows Defender
 
-cmd
+ATENÇÃO: Reduz drasticamente a segurança do sistema
 
-Abre um novo prompt de comando com privilégios de administrador.
+Uso: Apenas para troubleshooting específico
 
-12
+14. Verificar Atualizações do Windows
+Comando: powershell.exe -command "Get-WindowsUpdateLog"
 
-Atualizar Programas (Winget)
+Função: Exibe log de atualizações do Windows
 
-winget update --all
+Informações: Histórico de instalação, falhas, status
 
-Busca e instala atualizações para programas via Windows Package Manager.
+🌐 MENU DE FERRAMENTAS DE REDE (4 Opções)
+1. Verificar Conectividade (Ping)
+Comando: ping 8.8.8.8 -n 5
 
-13
+Função: Testa conectividade com servidor DNS do Google
 
-Desativar Windows Defender ⚠️
+Parâmetros:
 
-powershell ... -DisableRealtimeMonitoring $true
+8.8.8.8: DNS público do Google (sempre disponível)
 
-Desabilita a proteção em tempo real do antivírus nativo.
+-n 5: Enviar 5 pacotes de teste
 
-14
+Resultados: Tempo de resposta, perda de pacotes
 
-Verificar Updates do Windows
+Diagnóstico: Identifica problemas de conectividade
 
-powershell ... Get-WindowsUpdateLog
+2. Limpar Cache DNS
+Comando: ipconfig /flushdns
 
-Gera e exibe o log detalhado das atualizações do Windows.
+Função: Remove entradas cached do DNS local
 
-</details>
+Uso: Resolver problemas de resolução de nomes
 
-<details>
-<summary><strong>🌐 3. Ferramentas de Rede</strong></summary>
+Benefício: Força nova consulta DNS para sites
 
-#
+3. Reiniciar Serviços de Rede
+Comandos:
 
-Função
+netsh winsock reset: Reset do catálogo Winsock
 
-Comando
+netsh int ip reset: Reset da pilha TCP/IP
 
-Descrição
+Função: Restaura configurações de rede aos padrões
 
-1
+Uso: Resolver problemas de conectividade complexos
 
-Verificar Conectividade
+IMPORTANTE: Requer reinicialização do sistema
 
-ping 8.8.8.8 -n 5
+4. Exibir Configurações Detalhadas de Rede
+Comando: ipconfig /all
 
-Testa a conexão com a internet enviando 5 pacotes para o DNS do Google.
+Função: Mostra configuração completa de todas as interfaces de rede
 
-2
+Informações: IP, máscara, gateway, DNS, DHCP, MAC address
 
-Limpar Cache DNS
+Uso: Diagnóstico de configuração de rede
 
-ipconfig /flushdns
+🔧 OUTRAS FERRAMENTAS (2 Opções)
+1. Backup de Drivers
+Comando: dism /online /export-driver /destination:%destino%
 
-Limpa o cache de resolução de nomes, útil para resolver problemas de acesso a sites.
+Função: Exporta todos os drivers instalados para uma pasta
 
-3
+Destino: Pasta "DriversBackup" no mesmo local do script
 
-Reiniciar Serviços de Rede
+Uso: Backup antes de formatação ou mudança de hardware
 
-netsh winsock reset & netsh int ip reset
+Vantagem: Permite reinstalar drivers sem internet
 
-Restaura as configurações de rede aos padrões, resolvendo problemas complexos.
+2. Abrir Desinstalador (Geek)
+Comando: start "" "%~dp0APP\Desinstaldor.exe"
 
-4
+Função: Inicia o Geek Uninstaller portátil
 
-Exibir Configurações de Rede
+Localização: Pasta APP no mesmo diretório do script
 
-ipconfig /all
+Vantagem: Desinstalação mais limpa que o desinstalador padrão
 
-Mostra a configuração IP completa de todas as interfaces de rede.
+Funcionalidade: Remove resíduos de registro e arquivos
 
-</details>
+🎯 ESPECIFICAÇÕES DETALHADAS DO GEEK UNINSTALLER
+Visão Geral Técnica
+O Geek Uninstaller é um desinstalador avançado e portátil que vai muito além das capacidades do desinstalador padrão do Windows. Foi desenvolvido para garantir remoção completa de programas sem deixar vestígios no sistema.
 
-<details>
-<summary><strong>🔧 4. Outras Ferramentas</strong></summary>
+📊 Características Técnicas
+Especificações do Software
+Tamanho: Extremamente leve (~3-5 MB)
 
-#
+Tipo: Aplicação portátil (não requer instalação)
 
-Função
+Arquitetura: Suporte nativo para 32 e 64 bits
 
-Comando
+Compatibilidade: Windows 7/8/8.1/10/11
 
-Descrição
+Idiomas: Suporte para mais de 40 idiomas
 
-1
+Licença: 100% Gratuito (versão Pro paga disponível)
 
-Backup de Drivers
+Desenvolvedor: Atualizado regularmente para máxima confiabilidade
 
-dism /online /export-driver ...
+Interface do Usuário
+Design: Interface minimalista e intuitiva
 
-Exporta todos os drivers de terceiros instalados para uma pasta de backup.
+Funcionalidades visuais:
 
-2
+Programas recém-instalados/modificados destacados em cor roxa/laranja
 
-Abrir Desinstalador
+Busca instantânea (digite para localizar aplicativo imediatamente)
 
-start ... Desinstaldor.exe
+Exibição de tamanho total dos programas instalados
 
-Inicia o Geek Uninstaller, uma poderosa ferramenta de remoção de software.
+Filtros para aplicativos Desktop vs Microsoft Store
 
-</details>
+🔍 Funcionalidades Principais
+1. Remoção Limpa (Clean Removal)
+Processo:
 
-🎯 Ferramenta em Destaque: Geek Uninstaller
-O Geek Uninstaller é um desinstalador avançado e portátil que garante a remoção completa de programas.
+Executa desinstalação padrão do programa
 
-Remoção Limpa: Executa o desinstalador padrão e depois faz uma varredura profunda por arquivos residuais e entradas de registro órfãs.
+Realiza varredura profunda e rápida do sistema
 
-Remoção Forçada: Ideal para programas teimosos, corrompidos ou parcialmente desinstalados.
+Localiza e remove todos os vestígios restantes
 
-Suporte a Apps da Microsoft Store: Desinstala aplicativos UWP (Universal Windows Platform).
+Vantagens:
 
-Interface Intuitiva: Leve, rápido, com busca instantânea e informações detalhadas sobre os programas.
+Remove arquivos residuais em pastas do sistema
 
-📁 Estrutura de Arquivos
-📁 PenGOD/
-├── 📄 Suporte-TI.exe (script principal)
+Elimina entradas de registro órfãs
+
+Limpa atalhos inválidos no Menu Iniciar
+
+Remove pastas vazias deixadas pelo programa
+
+2. Remoção Forçada (Force Removal)
+Uso: Para programas teimosos, corrompidos ou parcialmente instalados
+
+Processo:
+
+Identifica todos os componentes do programa no sistema
+
+Remove forçadamente arquivos bloqueados ou em uso
+
+Elimina entradas de registro mesmo sem desinstalador
+
+Capacidades especiais:
+
+Remove programas que falharam na desinstalação normal
+
+Elimina software corrompido que não responde
+
+Força remoção de programas com desinstalador defeituoso
+
+3. Suporte a Aplicativos Microsoft Store
+Função: Desinstala aplicativos UWP (Universal Windows Platform)
+
+Acesso: Menu View ou Ctrl+Tab para alternar entre Desktop e Store apps
+
+Vantagem: Remove aplicativos pré-instalados do Windows que normalmente são difíceis de remover
+
+4. Recursos Avançados de Interface
+Busca Instantânea: Digite qualquer parte do nome para localizar programas rapidamente
+
+Menu de Contexto Completo:
+
+Desinstalar (padrão)
+
+Forçar Remoção
+
+Remover Entrada de Registro
+
+Pesquisar programa no Google
+
+Acessar página do desenvolvedor
+
+Informações Detalhadas: Exibe tamanho, data de instalação e localização dos programas
+
+⚡ Processo de Funcionamento Detalhado
+Etapa 1: Análise Inicial
+1. Geek Uninstaller lista todos os programas instalados
+2. Identifica programas recentes (destacados em cor)
+3. Calcula espaço total ocupado pelos programas
+4. Separa aplicativos Desktop de aplicativos Store
+
+Etapa 2: Desinstalação Padrão
+1. Executa desinstalador oficial do programa (se disponível)
+2. Monitora processo de desinstalação
+3. Registra arquivos e pastas que deveriam ser removidos
+
+Etapa 3: Varredura Profunda
+1. Escaneia sistema de arquivos em busca de vestígios
+2. Verifica registro do Windows para entradas órfãs
+3. Localiza atalhos inválidos em menus e desktop
+4. Identifica pastas vazias deixadas pelo programa
+
+Etapa 4: Apresentação dos Resultados
+1. Exibe lista de itens órfãos encontrados
+2. Permite seleção individual do que remover
+3. Mostra localização exata de cada arquivo/registro
+4. Oferece opção de manter itens específicos se necessário
+
+Etapa 5: Limpeza Final
+1. Remove arquivos e pastas selecionados
+2. Elimina entradas de registro escolhidas
+3. Limpa atalhos inválidos
+4. Remove pastas vazias
+5. Confirma conclusão da remoção completa
+
+🆚 Comparação com Desinstalador Padrão do Windows
+Aspecto
+
+Windows Padrão
+
+Geek Uninstaller
+
+Arquivos Residuais
+
+Deixa muitos vestígios
+
+Remove completamente
+
+Entradas de Registro
+
+Mantém entradas órfãs
+
+Limpa registro completamente
+
+Programas Corrompidos
+
+Falha frequentemente
+
+Remoção forçada eficaz
+
+Aplicativos Store
+
+Limitado
+
+Suporte completo
+
+Velocidade
+
+Padrão
+
+Varredura rápida e eficiente
+
+Interface
+
+Básica
+
+Avançada com busca e filtros
+
+Informações
+
+Mínimas
+
+Detalhadas (tamanho, data, etc.)
+
+🔧 Casos de Uso Específicos
+Para Técnicos de Suporte
+Limpeza antes da entrega: Remove completamente software de teste ou temporário
+
+Resolução de conflitos: Elimina programas que causam instabilidade
+
+Preparação para formatação: Remove software preservando lista para reinstalação futura
+
+Manutenção preventiva: Limpeza profunda de software desnecessário
+
+Para Usuários Avançados
+Otimização de sistema: Remove bloatware pré-instalado
+
+Resolução de problemas: Elimina software corrompido que não desinstala normalmente
+
+Limpeza de sistema: Mantém PC organizado sem vestígios de programas antigos
+
+Gerenciamento de espaço: Remove efetivamente programas grandes com todos os componentes
+
+🛡️ Recursos de Segurança
+Proteções Implementadas
+Lista de Exclusão Automática: Protege arquivos críticos do Windows
+
+Confirmação Dupla: Pede confirmação antes de remover itens importantes
+
+Modo de Visualização: Permite revisar o que será removido antes da execução
+
+Log de Atividades: Registra todas as ações para auditoria posterior
+
+Precauções Recomendadas
+Criar ponto de restauração antes de remoções forçadas
+
+Revisar lista de itens órfãos antes de confirmar remoção
+
+Não remover entradas de registro se não tiver certeza da função
+
+Fazer backup de dados importantes antes de limpezas extensas
+
+📈 Performance e Eficiência
+Velocidade de Execução
+Inicialização: Instantânea (aplicativo portátil)
+
+Varredura: 15-60 segundos dependendo do tamanho do programa
+
+Remoção: Alguns segundos para maioria dos vestígios
+
+Uso de Recursos: Mínimo impacto no sistema durante operação
+
+Eficácia de Limpeza
+Taxa de Detecção: ~95% dos vestígios encontrados e removidos
+
+Falsos Positivos: Muito baixos devido a algoritmos refinados
+
+Compatibilidade: Funciona com virtualmente todos os tipos de software
+
+Confiabilidade: Processo seguro sem danificar sistema operacional
+
+🎯 Configurações e Personalização
+Opções Disponíveis
+Modo de Exibição: Lista detalhada ou ícones grandes
+
+Filtros: Por tipo de aplicativo, data de instalação, tamanho
+
+Idioma: Seleção entre mais de 40 idiomas disponíveis
+
+Comportamento: Configuração de confirmações e avisos
+
+Versão Pro (Opcional)
+Recursos Adicionais:
+
+Monitoramento de instalação em tempo real
+
+Remoção em lote de múltiplos programas
+
+Histórico detalhado de desinstalações
+
+Suporte técnico prioritário
+
+Custo: Valor único (não é mensalidade)
+
+Diferencial: Versão gratuita já oferece funcionalidades completas para uso geral
+
+📁 Estrutura de Arquivos no Pendrive
+📁 Pendrive de Suporte/
+├── 📄 Menu_Suporte_FUNESA.bat (script principal)
 ├── 📄 README.md (este arquivo)
 ├── 📁 APP/
-│   └── 📄 Desinstaldor.exe (Geek Uninstaller)
-├── 📁 DriversBackup/ (criada automaticamente pelo script)
+│   └── 📄 Desinstaldor.exe (Geek Uninstaller - ~3-5MB)
+├── 📁 DriversBackup/ (criada automaticamente)
 └── 📁 GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}/
     └── (Atalhos para todas as configurações do Windows)
 
 ⚠️ Avisos e Precauções
-Privilégios Administrativos: O script deve ser executado como administrador.
+Requisitos Obrigatórios
+Privilégios Administrativos: Script deve ser executado como administrador
 
-Backup: Sempre faça backup de dados importantes antes de executar reparos críticos como chkdsk ou sfc.
+Windows Compatível: Testado em Windows 7/8/10/11
 
-Comandos de Risco: Desativar o Firewall ou o Windows Defender reduz drasticamente a segurança do sistema. Use apenas para diagnóstico.
+Backup: Sempre faça backup antes de executar reparos críticos
 
-Reinicialização Necessária: Comandos como o reset de rede (netsh winsock reset) e o teste de memória (mdsched) exigem que o computador seja reiniciado para concluir a operação.
+Comandos que Requerem Reinicialização
+Reset de serviços de rede (netsh winsock reset)
 
-🛠️ Ferramentas Utilizadas
-Linguagem de Script: Batch Script
+Teste de memória (mdsched)
 
-Compilador: Bat To Exe Converter
+CHKDSK em unidade do sistema (dependendo do uso)
 
-Desinstalador: Geek Uninstaller
+Comandos com Riscos de Segurança
+Desativação do Windows Defender
 
-📄 Licença
-Este projeto está licenciado sob os termos do arquivo LICENSE incluído no repositório.
+Desativação do Firewall
 
-📞 Contato e Links Úteis
-Desenvolvido por: Juan Reis
+Limpeza de arquivos temporários (irreversível)
+
+Remoção forçada pelo Geek Uninstaller (pode remover componentes importantes se mal utilizado)
+
+Tempo de Execução Estimado
+Comandos Rápidos (< 1 min): ping, ipconfig, taskmgr, lusrmgr, Geek Uninstaller (inicialização)
+
+Comandos Médios (1-5 min): cleanmgr, systeminfo, flush DNS, Geek Uninstaller (remoção padrão)
+
+Comandos Longos (5-30 min): sfc, DISM, defrag, Geek Uninstaller (remoção forçada com muitos vestígios)
+
+Comandos Muito Longos (30+ min): chkdsk, mdsched
+
+🎯 Casos de Uso Recomendados
+Diagnóstico Inicial
+Verificar saúde do disco
+
+Informações do sistema
+
+Ver logs de eventos
+
+Testar conectividade de rede
+
+Verificar programas instalados com Geek Uninstaller (identificar software problemático)
+
+Manutenção Preventiva
+Desfragmentar disco
+
+Limpar arquivos temporários
+
+Atualizar programas (Winget)
+
+Criar ponto de restauração
+
+Remover bloatware e programas desnecessários com Geek Uninstaller
+
+Reparo de Problemas
+Reparar arquivos de sistema (SFC)
+
+Verificar integridade (DISM)
+
+Reset de rede (se problemas de conectividade)
+
+Restauração do sistema
+
+Remover software corrompido ou conflitante com remoção forçada
+
+Preparação para Formatação
+Fazer lista de programas instalados via Geek Uninstaller
+
+Backup de drivers
+
+Criar ponto de restauração
+
+Backup de arquivos importantes (manual)
+
+Limpeza completa de software temporário ou de teste
+
+🆘 Solução de Problemas
+Script não executa
+Causa: Falta de privilégios administrativos
+
+Solução: Clicar direito → "Executar como administrador"
+
+Comandos falham
+Causa: Windows corrompido ou hardware defeituoso
+
+Solução: Executar em modo de segurança ou usar Windows PE
+
+Geek Uninstaller não abre
+Causa: Arquivo Desinstaldor.exe não encontrado na pasta APP
+
+Solução: Verificar se o arquivo está na pasta correta com nome exato
+
+Geek Uninstaller não remove programa
+Causa: Programa com proteção especial ou profundamente integrado ao sistema
+
+Solução:
+
+Tentar remoção forçada
+
+Executar como administrador
+
+Finalizar processo do programa antes da remoção
+
+Usar modo de segurança se necessário
+
+Remoção forçada remove muitos itens
+Causa: Programa compartilha componentes com outros software
+
+Solução:
+
+Revisar lista de itens órfãos cuidadosamente
+
+Desmarcar itens que pertencem a outros programas
+
+Pesquisar online sobre entradas de registro desconhecidas
+
+Criar ponto de restauração antes da remoção
+
+God Mode não funciona
+Causa: Nome da pasta incorreto ou Windows não suportado
+
+Solução: Verificar se o nome da pasta está exato como especificado
+
+📞 Suporte e Contato
+Para dúvidas sobre o uso das ferramentas ou problemas específicos:
+
+Documentação adicional: Parâmetro /? em cada ferramenta de linha de comando
+
+Logs detalhados: Visualizador de Eventos para análise de problemas
+
+Geek Uninstaller: Site oficial em https://geekuninstaller.com
+
+Contato: Juan Reis
 
 LinkedIn: www.linkedin.com/in/juanreis
 
-Geek Uninstaller Oficial: geekuninstaller.com/download
+🔗 Links Úteis
+Downloads e Recursos
+Geek Uninstaller Oficial: https://geekuninstaller.com/download
 
-Documentação Microsoft: docs.microsoft.com/windows
+Documentação Microsoft: https://docs.microsoft.com/windows
+
+Ferramentas Sysinternals: https://docs.microsoft.com/sysinternals
+
+Documentação de Comandos
+CHKDSK: chkdsk /?
+
+SFC: sfc /?
+
+DISM: dism /?
+
+Geek Uninstaller: Menu Ajuda dentro do aplicativo
+
+📦 Como Funciona o "Bat to Exe"
+A conversão de um script .bat (batch) para um arquivo .exe (executável) é feita por um programa conversor. Este processo não "compila" o código batch em código de máquina como acontece com linguagens como C++. Em vez disso, ele empacota o script.
+
+Processo de Empacotamento
+Empacotador: O conversor cria um arquivo .exe que contém o seu script .bat original dentro dele, juntamente com um pequeno "interpretador" ou "extrator".
+
+Execução: Quando você executa o .exe, o extrator entra em ação. Ele extrai o script .bat para uma pasta temporária no sistema e o executa de forma oculta (geralmente sem abrir uma janela de console visível).
+
+Limpeza: Após a execução do script, o arquivo temporário é removido.
+
+Vantagens
+Portabilidade: Qualquer pessoa pode executar o arquivo .exe sem precisar ver o código ou ter conhecimentos de scripts.
+
+Ocultação do Código-Fonte: O usuário final não vê diretamente o código do seu script, adicionando uma camada de proteção à sua lógica.
+
+Profissionalismo: Permite associar um ícone personalizado ao arquivo, dando uma aparência mais profissional à sua ferramenta.
+
+Riscos e Desvantagens
+Falsos Positivos de Antivírus: A técnica de empacotar scripts é frequentemente usada para distribuir malware. Por isso, muitos programas antivírus podem identificar seu .exe como uma ameaça (vírus ou trojan), mesmo que seja completamente seguro. Isso é o principal ponto de atenção ao distribuir ferramentas convertidas dessa forma.
+
+📜 Licença
+Este projeto é distribuído sob a Licença MIT. Veja abaixo os detalhes.
+
+Licença MIT (MIT License)
+
+Copyright (c) 2025 Juan Reis
+
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para negociar o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e permitir que as pessoas a quem o Software é fornecido o façam, sujeito às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTE DE, FORA DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+
+Versão: 2.1
+Compatibilidade: Windows 7/8/10/11
+Última Atualização: Setembro 2025
+Desenvolvido por: Juan Reis - Suporte Técnico
+Contato: LinkedIn - Juan Reis
