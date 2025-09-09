@@ -343,7 +343,11 @@ color 0A                     # Cor: fundo preto, texto verde
 **Para dúvidas ou problemas técnicos:**
 
 **Contato**: Juan Reis  
-**LinkedIn**: [linkedin.com/in/juanreis](https://linkedin.com/in/juanreis)
+<a href="https://www.linkedin.com/in/juanreis" rel="nofollow" target="_blank">
+<picture>
+<img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
+</picture>
+</a>
 
 </div>
 
