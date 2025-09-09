@@ -1,3 +1,8 @@
+
+
+
+
+
 # 🛠️ PenGOD
 
 <div align="center">
@@ -17,10 +22,9 @@
 <img alt="Version" src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge" />
 </picture>
 
-<p><strong>Pendrive com ferramentas de suporte Windows por Juan Reis</strong></p> <p>Menu interativo com <strong>47 funções</strong> para manutenção, reparo e diagnóstico de sistema<br/>Contém script batch, Geek Uninstaller e God Mode<br/>Ideal para técnicos e usuários avançados</p>
-<picture>
-<img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" />
-</picture>
+<a href="https://www.linkedin.com/in/juan-reis" rel="nofollow">
+
+<p><strong>Pendrive com ferramentas de suporte Windows por Juan Reis</strong></p> <p>Menu interativo com <strong>47 funções</strong> para manutenção, reparo e diagnóstico de sistema<br/>Contém script batch, Geek Uninstaller e God Mode<br/>Ideal para técnicos e usuários avançados</p> <picture> <img alt="LinkedIn - Juan Reis" src="https://img.shields.io/badge/LinkedIn-Juan_Reis-0077B5?style=for-the-badge&logo=linkedin" /> </picture> </a>
 
 </div>
 
